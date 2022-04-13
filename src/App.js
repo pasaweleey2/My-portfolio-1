@@ -45,8 +45,8 @@ function App() {
         <h1 class="MY ">MY Portfolyu</h1>
         <iframe name="123" width="100%" height="500px" src="file:///D:/My%20project/face%20ista%20whats/ifram.html" frameborder="1">
         </iframe>
-        <a class="a" target="123" href="jumya/home.html">jumya</a>
-        <a class="a" target="123" href="tasck1/index.html">Netflix</a>
+//         <a class="a" target="123" href="jumya/home.html">jumya</a>
+//         <a class="a" target="123" href="tasck1/index.html">Netflix</a>
         <a class="a" target="123" href="خمسات/index.html">خمسات</a>
         <a class="a" target="123" href="images/index 3.html">js</a>
       </section>
