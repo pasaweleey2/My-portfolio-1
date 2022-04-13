@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> خمسات لبيع و شراء الخدمات المصغرة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+    margin: 0%;
+}
+.header{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(85, 84, 84);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+}
+#logo{
+    width: 100px;
+    height: 30px;
+}
+.header :nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 40%;
+    align-items: center;
+}
+.header :nth-child(2) p{
+    width: 110px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header :nth-child(2) p:hover{
+    background-color: gray;
+    transition: .5s;
+}
+.icon{
+    display: flex;
+    height: 70px;
+    width: 70px;
+    flex-direction: column;
+    direction: rtl;
+    box-sizing: border-box;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+.icon:hover{
+    background-color: gray;
+    transition: .5s;
+}
+.icon div{
+    width: 50%;
+    height: 5px;
+    background-color: black;
+    margin: 2px;
+}
+.icon div:nth-child(2){
+    width: 30%;
+}
+.icon div:nth-child(2):hover{
+    width: 50%;
+    transition: .5s;
+    
+}
+.personal_parent{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.personal_parent:hover{
+    background-color: gray;
+    transition: .5s;
+}
+.personal{
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    border-radius: 50%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    background-color: #F1F1F1;
+}
+.text_one{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_one h1{
+    font-size: 30px;
+    font-weight: normal;
+    font-family: "Noto Kufi Arabic", "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #222222
+}
+.img_One{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    padding:0 200px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.links{
+    width: 250px;
+    height: 120px;
+    background-image: url(https://khamsat.hsoubcdn.com/assets/images/remote-64132428314c98f2e8abe5e4b98b3a03f215fdd04788b533f52171026fb30d70.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+.links_two{
+    width: 250px;
+    height: 120px;
+    background-image: url("https://khamsat.hsoubcdn.com/assets/images/social-5598c2401b6ca90eda3df7c69c8c4727dcc937f8cc995096456d8a8773f4d324.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+.links_three{
+    width: 250px;
+    height: 120px;
+    background-image: url("https://khamsat.hsoubcdn.com/assets/images/development-bb416454cb6338d96f266211eb8d2e10fc669ddb8470ee95eef00c841df903e8.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+.links_four{
+    width: 250px;
+    height: 120px;
+    background-image: url("https://khamsat.hsoubcdn.com/assets/images/bussiness-2c1f54b0bd848ce232a972323a799f3abe75235eb4f00fb0180d4ede6ac390dd.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+    
+}
+.links:hover{
+    box-shadow: #575757 1px -4px 20px 1px;
+    transition: .5s;
+}
+.links_two:hover{
+    box-shadow: #575757 1px -4px 20px 1px;
+    transition: .5s;
+}
+.links_three:hover{
+    box-shadow: #575757 1px -4px 20px 1px;
+    transition: .5s;
+}
+.links_four:hover{
+    box-shadow: #575757 1px -4px 20px 1px;
+    transition: .5s;
+}
+.img_two{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    padding:0 200px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.Two_links_one{
+    width: 250px;
+    height: 120px;
+    background-image: url("https://khamsat.hsoubcdn.com/assets/images/translate-ad754e21fea72c69a11e1000903e1f848812bc20e3f1033d6e44f15c249dcd61.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+.Two_links_two{
+    width: 250px;
+    height: 120px;
+    background-image: url("https://khamsat.hsoubcdn.com/assets/images/audio-93508fbd03c4ca1a20eabc10ecbf7924161d61e7139878bc93641c310d195e13.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+.Two_links_three{
+    width: 250px;
+    height: 120px;
+    background-image: url("https://khamsat.hsoubcdn.com/assets/images/design-17881dc3ab0928311acc42761ff77c7e9a09e077c326fbc5d373e4fe1b5ad397.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+.Two_links_four{
+    width: 250px;
+    height: 120px;
+    background-image: url("https://khamsat.hsoubcdn.com/assets/images/video-9b7fb5a1ae97544b32573e1625c5b12bb86e5fff9abfe4ae5ba7371ea86c41ae.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+.Two_links_one:hover{
+    box-shadow: #575757 1px -4px 20px 1px;
+    transition: .5s;
+}
+.Two_links_two:hover{
+    box-shadow: #575757 1px -4px 20px 1px;
+    transition: .5s;
+}
+.Two_links_three:hover{
+    box-shadow: #575757 1px -4px 20px 1px;
+    transition: .5s;
+}
+.Two_links_four:hover{
+    box-shadow: #575757 1px -4px 20px 1px;
+    transition: .5s;
+}
+.text_two{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    padding:0 200px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 20px;
+    align-items: center;
+}
+.text_two .a_one {
+    text-decoration: none;
+    color: green;
+    border: 1px green solid;
+    padding: 10px;
+    font-weight: normal;
+    font-family: "Noto Kufi Arabic", "Open Sans", sans-serif;
+    text-align: center;
+    height: 20px;
+}
+.text_two .a_two{
+    font-size: 30px;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    font-family: "Noto Kufi Arabic", "Open Sans", sans-serif;
+    color: red;
+    text-decoration: none;
+}
+.text_two .a_one:hover{
+    background-color: green;
+    color: white;
+    transition: .3s;
+}
+.text_two .a_two:hover{
+    color: green;
+    transition: .3s;
+}
+.img_three{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 250px;
+    padding:0 200px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.img_three .img_one{
+    width: 270px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.img_three .img_one:hover{
+    box-shadow: #575757 1px -4px 20px 1px;
+    transition: .5s;
+}
+.img_three .img_one img{
+    width: 250px;
+    height: 140px;
+}
+.img_three .img_one #link_one{
+    text-decoration: none;
+    color: rgba(128, 128, 128, 0.644);
+}
+.img_three .img_one .p_one{
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.5;
+}.img_three .img_one .p_one:hover{
+    color: green;
+    transition: .3s;
+}
+#a_two{
+    color: #222222
+}
+#a_two:hover{
+    color: green;
+}
+.footer_one{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 50px;
+    height: 380px;
+    box-sizing: border-box;
+    direction: rtl;
+    align-items: center;
+    line-height: 1.8;
+    color: #222222;
+}
+.footer_one #h3:hover{
+    color: green;
+}
+.footer_one li:hover{
+    color: green;
+}
+.footer_one li{
+    margin-right: -20px;
+    list-style: square;
+}
+.footer_two{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #222222;
+}
+.footer_two a{
+    color: #222222;
+    text-decoration: none;
+    margin: 5px;
+}
+.footer_two a:hover{
+    color: green;
+    transition: .3s;
+}
+.footer_three{
+    background-color: rgb(250, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 150px;
+    padding-bottom: 50px;
+}
+.footer_three a{
+    text-decoration: none;
+    color: #575757;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="personal_parent">
+        <div class="personal"></div>
+    </div>
+        <div class]="text_header">
+            <p>اضف  الخدمه</p>
+            <p> التصنيفات</p>
+            <p> المشتريات</p>
+            <p> الطلبات الوارده</p>
+            <img src="logo.png" alt="" id="logo">
+            <div class="icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text_one">
+            <h1>كافة الخدمات الإبداعية والاحترافية لتطوير وتنمية أعمالك
+            </h1>
+        </div>
+        <div class="img_One">
+            <a href="#" class="links">
+                <span class="text_links"> تدريب عن بعد</span>
+            </a>
+            <a href="#" class="links_two">
+                <span class="text_links"> تسويق الكتروني</span>
+            </a>
+            <a href="#" class="links_three">
+                <span class="text_links"> برمجه تطوير</span>
+            </a>
+            <a href="#" class="links_four">
+                <span class="text_links"> اعمال</span>
+            </a>
+        </div>
+        <div class="img_two">
+            <a href="#" class="Two_links_one">
+                <span>كتابه وترجمه</span>
+            </a>
+            <a href="#" class="Two_links_two">
+                <span>ًصوتيات</span>
+            </a>
+            <a href="#" class="Two_links_three">
+                <span> تصميم</span>
+            </a>
+            <a href="#" class="Two_links_four">
+                <span>تصميم فيديو</span>
+            </a>
+        </div>
+        <div class="text_two">
+            <a href="#" class="a_one">عرض الجميع</a>
+            <a href="#" class="a_two">خدمات اعمال</a>
+        </div>
+        <div class="img_three">
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/849026/202d8cfbe94dd8d894c1ef0f3a022c1c_thumb.jpg" alt=""></a>
+                <p class="p_one">كتابة أبحاث فى مجال القانون والإقتصاد والضرائب والجمارك (7صفحات)</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/1294696/8966fcd3e95ff49e4a65d7749bb72ece_thumb.jpg" alt=""></a>
+                <p class="p_one">دراسة جدوى للمشاريع مفصلة (بملف وورد)</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/1185439/3ea2e99c65d5529042349303bf7516dc_thumb.jpg" alt=""></a>
+                <p class="p_one">التحليل الاحصائي باستخدام برنامج SPSS</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/2263369/dc7140790bfb2ec3dc16231d31e8e282_thumb.jpg" alt=""></a>
+                <p class="p_one">ادخال واستخراج المنتجات (من/إلى) المتاجر الالكترونية بأنوعها</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+        </div>
+        <div class="text_two">
+            <a href="#" class="a_one">عرض الجميع</a>
+            <a href="#" class="a_two" id="a_two">خدمات برمجه وتطوير</a>
+        </div>
+        <div class="img_three">
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/550742/aeec32b971e0fd1559e60a9ab2deb7fa_thumb.jpg" alt=""></a>
+                <p class="p_one">حل مشاكل , اخطاء ضبط طرق الشحن, الدفع اوبن كارت OpenCart</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/426275/bdc52fb1c4d0b73c0c737563a7383cd0_thumb.jpg" alt=""></a>
+                <p class="p_one">تركيب وضبط مواقع WordPress بالكامل</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/278965/0c6e6fb82a314f027411ac1bd656ec14_thumb.jpg" alt=""></a>
+                <p class="p_one">إصلاح الأخطاء الموجودة في سكريبت Spring Boot</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/1508092/facc4d469915076567c1f58bfff56c93_thumb.jpg" alt=""></a>
+                <p class="p_one">نقل موقعك من بلوجر الي ووردبريس بدون مشاكل</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+        </div>
+        <div class="text_two">
+            <a href="#" class="a_one">عرض الجميع</a>
+            <a href="#" class="a_two"id="a_two">خدمات تسويق الالكتروني</a>
+        </div>
+        <div class="img_three">
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/205965/e6eff28dad2cc1b6b5ee4ee7cd917e1d_thumb.jpg" alt=""></a>
+                <p class="p_one">استشاره ومتابعة واعداد لحملتك الاعلانية /اعلانات جوجل للبحث</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/498246/06f7db9a9ab874ec07f7a9df8f18e64f_thumb.jpg" alt=""></a>
+                <p class="p_one">اعلان نصي Do Follow على موقع دليل الاردن</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/39018/caa45d1306fa04042f9eba00cee5a524_thumb.jpg" alt=""></a>
+                <p class="p_one">رابط نصي في موقع PR6 يعطيك مسك كلمات وباك لينك</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/1767314/b614cbda653d051f3cac4c61fcb392ee_thumb.jpg" alt=""></a>
+                <p class="p_one">التخلص من الروابط الخلفية الضارة لموقعك disavow link</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+        </div>
+        <div class="text_two">
+            <a href="#" class="a_one">عرض الجميع</a>
+            <a href="#" class="a_two"id="a_two">خدمات تدريب عن بعد</a>
+        </div>
+        <div class="img_three">
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/1872737/64f2f655aaac513dc8f0b4a4c1b23684_thumb.jpg" alt=""></a>
+                <p class="p_one">حقائب تدربية فى مهارة الوعى الذاتى</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/808970/77b58940068713a1f6d667eddc893d7c_thumb.jpg" alt=""></a>
+                <p class="p_one">سأساعدك في الاحتمالات والإحصاء probability and statistics</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/2164111/00848586ab78cb12c480c5f5d6bec37f_thumb.jpg" alt=""></a>
+                <p class="p_one">شرح مواد هندسة الاتصالات باللغتين العربية و الانكليزية</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/1872737/e25110c9f0ff6fbf018ddb508a8f5654_thumb.jpg" alt=""></a>
+                <p class="p_one">حقائب تدربية فى مهارة حل المشكلات .</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+        </div>
+        <div class="text_two">
+            <a href="#" class="a_one">عرض الجميع</a>
+            <a href="#" class="a_two"id="a_two">خدمات تصميم فيديو</a>
+        </div>
+        <div class="img_three">
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/736995/260a3ecb52b276d54c303c101b9a21a8_thumb.jpg" alt=""></a>
+                <p class="p_one">فيديو إعلاني بواسطة تقنية الموشن جرافيك (motion graphic)</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/2141419/8569e7bc0f7d48cade0d21591cd1528d_thumb.jpg" alt=""></a>
+                <p class="p_one">تصميم دعوة زفاف عقد قران او اي مناسبة الكترونية</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/1646892/5f47f6b627fbd126f92c319692923f5a_thumb.jpg" alt=""></a>
+                <p class="p_one">مونتاج كل انواع الفيديو باقل تكلفة و اسرع وقت</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/225871/df75728e2029996b2b5024b009466848_thumb.jpg" alt=""></a>
+                <p class="p_one">فيديو وايت بورد Whiteboard مقابل 5$ لكل 30 ثانية</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+        </div>
+        <div class="text_two">
+            <a href="#" class="a_one">عرض الجميع</a>
+            <a href="#" class="a_two"id="a_two">خدمات تصميم </a>
+        </div>
+        <div class="img_three">
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/938933/fb2eb10d35cdb908085580640523006b_thumb.jpg" alt=""></a>
+                <p class="p_one">عمل تصميمات معمارية داخلية او خارجية</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/2090029/2f392e6e5f8b423913a5757206eb990e_thumb.jpg" alt=""></a>
+                <p class="p_one">رسم مخطط هيكلي للعمل (خطوات العمل) Flow Chart بـ Visio</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/883478/3509aa314a5cc9b426e70dcc62162df8_thumb.jpg" alt=""></a>
+                <p class="p_one">تصميم عروض تقديمية متقدمة ( PowerPoint ) ( 30 شريحة)</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/1260003/7a03ef15f40b2846ce39a89fe93da816_thumb.jpg" alt=""></a>
+                <p class="p_one">تصميم الحديقة الخارجية للمنزل كل 5 متر مربع .</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+        </div>
+        <div class="text_two">
+            <a href="#" class="a_one">عرض الجميع</a>
+            <a href="#" class="a_two"id="a_two">خدمات صوتيات </a>
+        </div>
+        <div class="img_three">
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/1370408/3064264d42ff5463d9d84383ebb8b28b_thumb.jpg" alt=""></a>
+                <p class="p_one">توزيع وتلحين وتأليف وصنع المزيكا والموسيقى</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/900369/15569dd51759fcae5fc1f22197260ff8_thumb.jpg" alt=""></a>
+                <p class="p_one">إنشاء وتأليف موسيقى أصلية للألعاب والتطبيقات ومقاطع الفيديو</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/1401045/6014cd621cac2f5f5f580683e97a522c_thumb.jpg" alt=""></a>
+                <p class="p_one">تلحين و توزيع اي عمل موسيقي ، هندسة صوتية ، موسيقى تصويرية</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/1138598/14695f6f4eefdc1deef481205c43c03f_thumb.jpg" alt=""></a>
+                <p class="p_one">تعليق صوتي موشن جرافيك لهجة خليجي السعودية</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+        </div>
+        <div class="text_two">
+            <a href="#" class="a_one">عرض الجميع</a>
+            <a href="#" class="a_two"id="a_two">خدمات كتابة و ترجمه</a>
+        </div>
+        <div class="img_three">
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/2068856/e09812203d02622b9dd30e5599a89e31_thumb.jpg" alt=""></a>
+                <p class="p_one">كتابة مقالات باللغة العربية والانجليزية</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/1663624/2a0e7570441321536bde75014434151f_thumb.jpg" alt=""></a>
+                <p class="p_one">البحث عن دراسات في الإنترنت بالعربية والإنجليزية مقابل خدمة</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/713713/96a9cb95c1427fcf10bc102674e5eca3_thumb.jpg" alt=""></a>
+                <p class="p_one">تنسيق الرسائل الجامعية حسب دليل عمادة الدراسات العليا</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+            <div class="img_one">
+                <a href=""><img src="https://khamsat.hsoubcdn.com/images/services/2290996/d901de5576a0baa9c52a6ecf3afd6afe_thumb.jpg" alt=""></a>
+                <p class="p_one">تلخيص الكتب والمقالات والمقررات الجامعية</p>
+                <a href="#" id="link_one">أعمال / دراسات وأبحاث</a>
+                <p>تبدأ من <Span style="font-weight: bolder;">5.00$</Span></p>
+            </div>
+        </div>
+        <div style="width: 100%;height: 70px;color: #F1F1F1;"></div>
+        <div class="footer_one">
+            <div style="width: 20%;">
+                <div style="direction: rtl;">
+                    <h3 id="h3">موقع خسمات</h3>
+                    <ul>
+                        <li>حول خمسات</li>
+                        <li>كيف يعمل الموقع</li>
+                        <li>الأسئلة الشائعة</li>
+                        <li>إعرف كيف نضمن حقوقك</li>
+                    </ul>
+                </div>
+                <div style="direction: rtl; margin-top: 30px;line-height: 1.8;">
+                    <h3>احصل علي مساعده</h3>
+                    <ul>
+                        <li>مركز المساعدة</li>
+                        <li>تحدث معنا</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 45%;">
+                <div>
+                    <h3 id="h3">
+                        مدونة خمسات
+                    </h3>
+                    <ul>
+                        <li>عالم الدوبلاج: عندما يصبح صوتك البطل</li>
+                        <li>تعرف على تحليل سوات للشخصية</li>
+                        <li>لماذا ينبغي ألا تتجاهل تقييم الخدمات التي تشتريها؟</li>
+                        <li>التخطيط للعام الجديد: اجعل أهدافك أقرب للتحقق</li>
+                    </ul>
+                </div>
+                <h3>وسائل الدفع</h3>
+                <img src="https://khamsat.hsoubcdn.com/assets/images/payments/payments-1bd088dca6708fc60341975310a3615b029bd99d7e80e52fd31cbb2a3d995afd.png" style="width: 200px; height: 30px; margin-top: 20px;" alt="">
+            </div>
+            <div style="width: 25%;"> 
+                <div>
+                    <h3 id="h3">مجتمع خمسات</h3>
+                    <ul>
+                        <li>نماذج أعمال قمت بتنفيذها</li>
+                        <li>طلبات الخدمات غير الموجودة</li>
+                        <li>تجارب وقصص المستخدمين</li>
+                        <li>أمور عامة حول خمسات</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>تابع خمسات </h3>
+                    <div>
+                        <img src="download.png" alt="" width="30px" height="30px" style="border-radius: 50%;margin: 10px;">
+                        <img src="تويتر-1024x623.jpg" alt="" width="30px" height="30px" style="border-radius: 50%;margin: 10px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_two">
+            <div>
+                © 2022 <span><a href="#">Galal</a></span> this page created by him.
+            </div>
+            <div>
+                <a href="#">شروط الاستخدام</a>
+                <a href="#">بيان الخصوصية</a>
+                <a href="#">المستويات</a>
+                <a href="#">التسويق بالعمولة</a>
+            </div>
+        </div>
+        <div class="footer_three">
+            <div>
+                <img src="https://static.hsoubcdn.com/footer/img/hsoub-logo.svg" alt="" width=" 200px" height="150px">
+            </div>
+            <div style="display: flex; justify-content: space-between; width: 90%; text-align: center;">
+                <Div style="display: flex;flex-direction: column;"><a href="#"><img src="img2.PNG" alt="" height="50px" width="50px"></a> <a href="#">صور</a></Div>
+                <Div style="display: flex;flex-direction: column;"><a href="#"><img src="img1.jpg.PNG" alt="" height="50px" width="50px"></a> <a href="#">اعلان حاسوب</a></Div>
+                <Div style="display: flex;flex-direction: column;"><a href="#"><img src="img3.PNG" alt="" height="50px" width="50px"></a> <a href="#">حسوب1/0</a></Div>
+                <Div style="display: flex;flex-direction: column;"><a href="#"><img src="img5.PNG" alt="" height="50px" width="50px"></a> <a href="#">موسوعه حسوب</a></Div>
+                <Div style="display: flex;flex-direction: column;"><a href="#"><img src="img6.PNG" alt="" height="50px" width="50px"></a> <a href="#">اكاديميه حسوب</a></Div>
+                <Div style="display: flex;flex-direction: column;"><a href="#"><img src="img7.PNG" alt="" height="50px" width="50px"></a> <a href="#">بعيد</a></Div>
+                <Div style="display: flex;flex-direction: column;"><a href="#"><img src="Capture3.PNG" alt="" height="50px" width="50px"></a> <a href="#">خسمات</a></Div>
+                <Div style="display: flex;flex-direction: column;"><a href="#"><img src="Capture2.PNG" alt="" height="50px" width="50px"></a> <a href="#">مستقل</a></Div>
+                <Div style="display: flex;flex-direction: column;"><a href="#"><img src="img8.PNG" alt="" height="50px" width="50px"></a> <a href="#">انا</a>
+                </Div>
+            </div>
+    </div>
+</body>
+</html>
